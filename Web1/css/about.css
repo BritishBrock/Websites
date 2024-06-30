@@ -1,3 +1,4 @@
+
 .about-main{
     width: 100%;
     position: relative;
@@ -46,6 +47,11 @@
 .about-info-background{
     width: 100%;
     height: 100%;
+    background-image: url("../resources/images/map.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
@@ -71,32 +77,35 @@
 
 .about-info-text{
     padding: 20px 100px;
-    max-width: 60ch;
-    background-color: #D1B1CB;
+    max-width: 80ch;
+    background-color: #DDCAD9;
     color:white;
     position: relative;
     height: fit-content;
     display: flex;
+ 
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.about-info-text::after{
+.about-info-text::before{
   content: "";
   width: 100%;
   height: 100%;
-  z-index: -1;
   background-color: #7C616C;
   position: absolute;
+  z-index: -1;
   left: -10px;
   top: 10px;
 }
 .about-info-text-header{
     color : #7C616C;
-    font-size: 1.3em;
+    font-size: 2em;
+    text-align: center;
 }
 .about-info-text-content{
     color: #EAFDF8;
     text-align: center;
+    font-size: 1.6em;
 }
 

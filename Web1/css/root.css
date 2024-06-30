@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 :root{
     /*
     EAFDF8
@@ -12,6 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
  }
 html,body{
     height: 100%;
@@ -20,16 +24,24 @@ html,body{
 .section{
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
 }
 .half-section{
     width: 100%;
     height: 50%;
+    position: relative;
+    z-index: 0;
 }
 .auto-section{
     min-height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 .auto-half-section{
     min-height: 50%;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
