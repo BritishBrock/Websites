@@ -47,3 +47,8 @@ html,body{
     z-index: 0;
     display: flex;
 }
+
+b{
+    font-weight: 800;
+}
+
