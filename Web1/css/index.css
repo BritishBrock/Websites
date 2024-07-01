@@ -275,6 +275,71 @@
     font-size: 1.8em;
     justify-content: space-between;
   }
-.scents-words{
-    
-}
+
+  .main-call-action{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main-call-action-left{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-call-action-right{
+flex:1;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  }
+
+  .main-call-action-content{
+
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    width: fit-content;
+    background-color: #DDCAD9;
+    color: white;
+    max-width: 60ch;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #7C616C;
+  }
+  .main-call-action-content::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #7c616c;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+  }
+  .main-call-action-text-header{
+    color : #7C616C;
+    font-size: 2em;
+    text-align: center;
+  }
+  .main-call-action-text-content{
+    color: #EAFDF8;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .main-call-action-text-button-content{
+    color : #7C616C;
+    font-size: 2em;
+    text-align: center;
+  }
+  .main-call-action-button{
+    font-size: 1.3em;
+    background-color: #EAFDF8;
+    border-radius: 10px;
+    padding: 15px 50px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0px  #7C616C;
+  }
