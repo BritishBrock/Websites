@@ -8,9 +8,11 @@
     position: absolute;
     left: 0;
     top: 0;
+    background-image: url("../resources/images/about.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
     width: 100%;
     height: 100%;
 }
@@ -107,4 +109,171 @@
     text-align: center;
     font-size: 1.6em;
 }
+.about-fields{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-fields-background{
+    width: 100%;
+    height: 100%;
+    background-image: url("../resources/images/about-fields1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about-fields-content{
+    padding: 80px 20px;
+    max-width: 50ch;
+    background-color: #DDCAD9;
+    color:white;
+    position: relative;
+    height: fit-content;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-fields-content::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #7C616C;
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 10px;
+}
 
+.about-fields-text-header{
+    color : #7C616C;
+    font-size: 2em;
+    text-align: center;
+}
+.about-fields-text-content{
+    color: #EAFDF8;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+b{
+    font-weight: 800;
+}
+.about-fields-buttons{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #DDCAD9;
+    margin: 0 10px;
+}
+
+.about-bottles{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-bottles-left{
+    flex:1;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-bottles-right{
+    flex:1;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-bottles-content{
+    padding: 120px 40px;
+    max-width: 50ch;
+    background-color: #DDCAD9;
+    color:white;
+    position: relative;
+    height: fit-content;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-bottles-content::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #7C616C;
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 10px;
+}
+.about-bottles-text-header{
+    color : #7C616C;
+    font-size: 2em;
+    text-align: center;
+}
+.about-bottles-text-content{
+    color: #EAFDF8;
+    text-align: center;
+    font-size: 1.3em;
+}
+.bottle-box{
+    width: 750px;
+    height: 750px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottle-oval1{
+    width: 600px;
+    height: 750px;
+    background-color: #7C616C;
+    border-radius: 100%;
+    transform: rotate(30deg);
+}
+.bottle-oval2{
+    width: 600px;
+    position: absolute;
+    height: 750px;
+    background-color: #5F4E55;
+    border-radius: 100%;
+    transform: rotate(30deg) translate(-15px, -5px);
+    scale: 0.98;
+
+}
+.bottle{
+    width: 100%;
+    height: 100%;
+    background-image: url("../resources/images/bottle.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-30deg) translate(-100px, -100px);
+    scale: 0.8;
+    filter: drop-shadow(50px 50px 0px rgba(0, 0, 0, 0.356));
+}
